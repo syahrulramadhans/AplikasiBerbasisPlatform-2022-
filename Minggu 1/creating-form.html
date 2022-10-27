@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <title>Form Add</title>
+</head>
+<body>
+    <form action="insert.php" method="POST">
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label>Nama Produk:</label>
+                <input type="text" name="name_produk" placeholder="Isikan Nama Produk..." />
+            </p>
+            <p>
+                <label>Harga:</label>
+                <input type="text" name="harga_produk" placeholder="1000" />
+            </p>
+            <p>
+                <label>Deskripsi:</label>
+                <textarea name="deskripsi_produk" rows="10" placeholder="deskripsi produk"></textarea>
+            </p>
+            <p>
+                <label>Foto Produk:</label>
+                <input type="file" name="foto_produk" accept="image/*" />
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Login" />
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

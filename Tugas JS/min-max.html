@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Max</title>
+    
+</head>
+<body>
+    <script>
+        //Membuat Array
+        var angka = [4, 10, 2, 6, 22, 51];
+
+        document.write("<h3>Min Max</h3>");
+        document.write("<h3>Syahrul Ramadhan S</h3>");
+
+        let max = angka[0];
+        let min = angka[0];
+
+        //Menggunakan Perulangan untuk mencetak semua isi array
+        for(let i = 0; i < angka.length; i++){
+            if (angka[i] < min){
+                min = angka[i];
+            }
+
+            if (angka[i] > max){
+                max = angka[i];
+            }
+        }
+        if (min%2 == 0){
+            document.write("Minimum adalah ", min, " (Genap) <br>");
+        }else{
+            document.write("Minimum adalah ", min, "(Ganjil) <br>");
+        }
+
+        document.write(" ");
+        if (max%2 == 0){
+            document.write("Maximum adalah ", max, " (Genap)");
+        }else{
+            document.write("Maximum adalah ", max, " (Ganjil)");
+        }
+    </script>
+</body>
+</html>
